@@ -17,7 +17,6 @@ from random import  choice, randint
 @app.on_message(
     command(["ساروت", "الساروت"])
     & filters.group
-    & ~filters.edited
 )
 async def yas(client, message):
     usr = await client.get_chat("devpokemon")
@@ -37,7 +36,7 @@ async def yas(client, message):
 
 @app.on_message(
     command(["ذكاء اصطناعي"])
-    & ~filters.edited
+
     
 )
 async def huhh(client: Client, message: Message):
