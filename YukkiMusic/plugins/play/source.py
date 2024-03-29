@@ -59,17 +59,14 @@ y.verbose = False
 @app.on_message(
     command(["سورس","السورس","يا سورس"])
     & filters.group
-    & ~filters.edited
 )
 @app.on_message(
     command(["سورس","السورس","يا سورس"])
     & filters.channel
-    & ~filters.edited
 )
 @app.on_message(
     command(["سورس","السورس","يا سورس","سورس ريفز","النجوم"])
     & filters.private
-    & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
